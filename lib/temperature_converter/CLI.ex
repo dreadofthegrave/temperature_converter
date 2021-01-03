@@ -23,7 +23,7 @@ defmodule TemperatureConverter.CLI do
 
   def process(:help) do
     IO.puts """
-    usage: temperature_converter 0 14.2 18.9 19.1 22.5 ...
+    usage: temperature_converter ["0", "14.2", "18.9", "19.1", "22.5", ...]
     """
     System.halt(0)
   end
