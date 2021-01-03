@@ -5,10 +5,11 @@ defmodule TemperatureConverter.CLI do
   arguments as well as the output formatting.
   """
 
-  def run(argv) do
+  def main(argv) do
     argv
     |> parse_args
     |> process
+    |> IO.inspect
   end
 
   def parse_args(argv) do

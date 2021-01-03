@@ -11,6 +11,7 @@ end
 test "parse --help and -h flag returns atom :help" do
   assert parse_args(["-h", "anything"]) == :help
   assert parse_args(["--help", "bruuuh"]) == :help
+  assert parse_args([5]) == [5]
 end
 
 test "processes list of temperatures" do
